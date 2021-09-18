@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features="src/test/resources/features/add/calculator.feature",
         plugin = {
+                "junit:target/junit-cucumber-reports/calculator.xml",
                 "json:target/cucumber-reports/calculator.json",
                 "pretty"
         },
